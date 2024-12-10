@@ -38,6 +38,11 @@ dependencies:
   provider: ^6.1.2
   bloc: ^8.1.4
   google_fonts: ^6.2.1
+  bloc_provider: ^1.0.0
+  flutter_bloc: ^8.1.6
+  http: ^1.2.2
+  intl: ^0.20.1
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:

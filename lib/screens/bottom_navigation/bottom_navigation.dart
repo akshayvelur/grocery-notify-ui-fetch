@@ -1,8 +1,8 @@
 
 
-import 'package:bw1_ui/view/home_page/home_page.dart';
-import 'package:bw1_ui/view/utils/colors/colors.dart';
-import 'package:bw1_ui/view/utils/style/font.dart';
+import 'package:bw1_ui/screens/home_page/home_page.dart';
+import 'package:bw1_ui/screens/utils/colors/colors.dart';
+import 'package:bw1_ui/screens/utils/style/font.dart';
 import 'package:flutter/material.dart';
 
 
@@ -38,18 +38,18 @@ class _BottomNavigationState extends State<BottomNavigation> {
         unselectedLabelStyle: bottomNavigationStyle(offWhiteClr,size: 13,Fweight: 600),
         items: [
           BottomNavigationBarItem(
-            icon: Image.asset("assets/Vector.png",),
+            icon: Image.asset("assets/Vector.png",scale: 1.3),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("assets/Group 197 (1).png"),
+            icon: Image.asset("assets/Group 197 (1).png",scale: 1.3,),
             label: 'Cart',
           ),
          BottomNavigationBarItem(
-            icon: Image.asset("assets/Group 196 (2).png"),
+            icon: Image.asset("assets/Group 196 (2).png",scale: 1.3),
             label: 'My Order',
           ),   BottomNavigationBarItem(
-            icon: Image.asset("assets/Group 201.png"),
+            icon: Image.asset("assets/Group 201.png",scale: 1.3),
             label: 'Account',
           ),
         ],

@@ -22,3 +22,8 @@ final purpuleGradient=LinearGradient(colors: [
                     const Color.fromRGBO(237, 235, 240, 0.169),
                     const Color.fromARGB(80, 0, 179, 215)
                   ], begin: Alignment.topLeft, end: Alignment.bottomRight);
+final commonGreen = const Color(0xFF29D177);  
+final redClr=const Color(0xFFFF0000);  
+final lightWhite= const Color.fromARGB(255, 239, 237, 237);             
+final checkClr=const Color(0xFFFF8918); 
+final myoff= const Color.fromARGB(255, 179, 167, 167); 

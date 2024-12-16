@@ -27,3 +27,4 @@ final redClr=const Color(0xFFFF0000);
 final lightWhite= const Color.fromARGB(255, 239, 237, 237);             
 final checkClr=const Color(0xFFFF8918); 
 final myoff= const Color.fromARGB(255, 179, 167, 167); 
+final purpleClr=const Color(0xFF9C37EC); 

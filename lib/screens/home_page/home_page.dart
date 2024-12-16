@@ -1,4 +1,3 @@
-import 'package:bw1_ui/screens/Notification/notification.dart';
 import 'package:bw1_ui/screens/home_page/widgets/black_card.dart';
 import 'package:bw1_ui/screens/home_page/widgets/carosel_card.dart';
 import 'package:bw1_ui/screens/home_page/widgets/head_lines.dart';
@@ -8,10 +7,8 @@ import 'package:bw1_ui/screens/home_page/widgets/refer_and_earn.dart';
 import 'package:bw1_ui/screens/home_page/widgets/searchbar.dart';
 import 'package:bw1_ui/screens/home_page/widgets/top_first.dart';
 import 'package:bw1_ui/screens/home_page/widgets/trending_grid.dart';
+import 'package:bw1_ui/screens/home_page/widgets/viewall_button.dart';
 import 'package:bw1_ui/screens/utils/colors/colors.dart';
-import 'package:bw1_ui/screens/utils/media_query/media_query.dart';
-import 'package:bw1_ui/screens/utils/style/font.dart';
-import 'package:bw1_ui/screens/utils/varriable/varriable.dart';
 import 'package:bw1_ui/state_managemnt/home_bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,10 +20,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<HomeBloc, HomeState>(
       listener: (context, state) {
+        // ignore: unnecessary_type_check
         if (state is HomeState) {
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => NotificationPage(),
-          ));
+          Navigator.pushNamed(context,'/notification',arguments:'Hello from Home Screen!');
         }
         // TODO: implement listener
       },
@@ -37,39 +33,34 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Home page
               HomeSearchBar(),
+              // First head line
               TopFirstHeadLine(),
+              //Main Gridview
               TopFirstGrid(),
+              // More head line
               MoreText(),
+              // "Top picks for you" head line
               TopSecondHeadLine(),
+              // "Top pick for you"slider card
               CaroselCard(),
+              // Trending head line
               TrendingHeadline(),
-              TrendingGrid(),
+              // Trending grid view
+              TrendingGrid(), 
+              // Craze deals head line
               CrazeHeadLine(),
+             // Craze deals card
               BlackCard(),
+              // Refer and earn card
               ReferAndRarn(),
+              // Nearby store head line 
               NearbyStores(),
+              // Nearby store card
               NearbyStoreList(),
-              Padding(
-                padding: const EdgeInsets.only(
-                  left: 15,
-                  right: 15,
-                  bottom: 30,
-                ),
-                child: Center(
-                    child: Container(
-                  height: mediaQueryHeight(.05, context),
-                  width: mediaQueryWidth(.5, context),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: commonGreen),
-                  child: Center(
-                      child: Text(
-                    "View all stores",
-                    style: appStyle(whiteClr, size: 14, Fweight: 600),
-                  )),
-                )),
-              )
+              // Viewall button 
+              ViewallButton()
             ],
           ),
         ),
@@ -77,3 +68,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+

@@ -33,14 +33,18 @@ class ReferAndRarn extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 10.0),
-                child: Text(
-                  "Invite your friends & earn 15% off",
-                  style: poppinsHeadStyle(whiteClr, size: 13,Fweight: 300),
+                padding: const EdgeInsets.only(left: 12.0),
+                child: Row(
+                  children: [
+                    Text(
+                      "Invite your friends & earn 15% off",
+                      style: poppinsHeadStyle(whiteClr, size: 13,Fweight: 300),
+                    ),SizedBox(width: mediaQueryHeight(.02, context),),
+                  Image.asset("assets/Group 133.png")],
                 ),
               )
             ],
-          ),Positioned(right: 34,child: Image.asset("assets/gift (1).png"))]
+          ),Positioned(right: 29,top: 9,child: Image.asset("assets/gift (1).png"))]
         ),
       ),
     );

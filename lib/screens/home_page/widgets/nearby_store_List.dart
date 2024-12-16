@@ -22,7 +22,7 @@ class NearbyStoreList extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 8.0),
               child: Container(
                 width: mediaQueryWidth(100, context),
-                height: mediaQueryHeight(.15, context),
+                height: mediaQueryHeight(.16, context),
                 child: Column(
                   children: [
                     Row(
@@ -47,10 +47,10 @@ class NearbyStoreList extends StatelessWidget {
                                   style: appStyle(blackClr, Fweight: 400, size: 13),
                                 ),SizedBox(height: mediaQueryHeight(.004, context),),
                                 Container(
-                                  color: myoff,
-                                  width: mediaQueryWidth(.09, context),
-                                  height: mediaQueryHeight(.012, context),
-                               child: Center(child: Text("Top Store",style: appStyle(blackClr,size: 5),),), )
+                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(2),color: myoff),
+                                  width: mediaQueryWidth(.14, context),
+                                  height: mediaQueryHeight(.018, context),
+                               child: Center(child: Text("Top Store",style: appStyle(blackClr,size: 8),),),)
                               ]),
                         )
                       ,Padding(

@@ -43,12 +43,12 @@ class _CardViewState extends State<CardView> {
                   leading: SizedBox(
                     width: 50, 
                     height: 50, 
-                    child: Image.asset("assets/${data!.image}"),
+                    child: Image.asset("assets/${data.image}"),
                     
                   ),
-                  title: Text(data!.title,style: bottomNavigationStyle(blackClr,size: 17,Fweight: 600),
+                  title: Text(data.title,style: bottomNavigationStyle(blackClr,size: 17,Fweight: 600),
                   ),subtitle: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [ Text(data!.body,style: bottomNavigationStyle(blackClr,size: 14),),
+                    children: [ Text(data.body,style: bottomNavigationStyle(blackClr,size: 14),),
                       Text(time,style: bottomNavigationStyle(offWhiteClr,size: 12),),
                     ],
                   ),

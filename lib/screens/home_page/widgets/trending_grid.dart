@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bw1_ui/screens/utils/colors/colors.dart';
 import 'package:bw1_ui/screens/utils/media_query/media_query.dart';
 import 'package:bw1_ui/screens/utils/style/font.dart';

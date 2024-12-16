@@ -31,18 +31,30 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  provider: ^6.1.2
+  provider: ^6.1.2 
+  # A popular state management solution in Flutter.
+  # It allows you to manage and share application state efficiently across widgets.
   bloc: ^8.1.4
+  #A library that provides patterns for implementing the Business Logic Component (BLoC) architecture.
+  # It helps separate UI code from business logic, making your codebase scalable and testable.
   google_fonts: ^6.2.1
+  # Allows you to use custom fonts from Google Fonts in your Flutter app.
   bloc_provider: ^1.0.0
+  #A provider-specific implementation for managing BLoC instances.
+  # It is used alongside the bloc package for dependency injection and state sharing.
   flutter_bloc: ^8.1.6
+  #Integrates the bloc library with Flutter.
+  # Provides widgets like BlocProvider and BlocBuilder to simplify state management in the
   http: ^1.2.2
+# A library for making HTTP requests (e.g., REST API calls).
+# It is used to interact with external services like fetching data or sending data to a server.
   intl: ^0.20.1
-  carousel_slider: ^5.0.0
+# A library for internationalization and localization.
+# Useful for formatting dates, numbers, or currencies and supporting multiple languages.
+  
 
 dev_dependencies:
   flutter_test:
